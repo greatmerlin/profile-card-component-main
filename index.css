@@ -13,16 +13,13 @@
   --darkCyan: hsl(185, 75%, 39%);
   --desaturatedBlue: hsl(229, 23%, 23%);
   --grayishBlue: hsl(227, 10%, 46%);
-  --darkGray: hsl(0, 0%, 60%);
-
-  --breakMobile: 1280px;
 }
 
 /* html -> body*/
 
 html,
 body {
-  font-size: 18px;
+  font-size: 10px;
   font-weight: 400;
   color: var(--desaturatedBlue);
   font-family: "Kumbh Sans", sans-serif;
@@ -30,14 +27,13 @@ body {
 
 main {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--darkCyan);
   position: relative;
   overflow: hidden;
-  
 }
 
 .wholeCard {
@@ -52,7 +48,6 @@ main {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 4px 4px 40px 1px rgba(0, 0, 0, 0.2);
-  
 }
 
 .cardBG {
@@ -66,7 +61,6 @@ main {
   height: 15rem;
   text-align: center;
   position: relative;
-  
 }
 
 .profileImage {
@@ -88,19 +82,19 @@ main {
   padding: 2rem;
 }
 
-.cardAge{
+.cardAge {
   color: var(--grayishBlue);
   font-weight: 400;
 }
 
-.cardLoc{
+.cardLoc {
   margin-top: 1rem;
   color: var(--grayishBlue);
   font-weight: 400;
   font-size: 1.4rem;
 }
 
-.cardBottom{
+.cardBottom {
   width: 100%;
   height: 10rem;
   padding: 0 1rem;
@@ -110,19 +104,19 @@ main {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.bottomBox{
+.bottomBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.bottomBoxTop{
+.bottomBoxTop {
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.bottomBoxDown{
+.bottomBoxDown {
   font-size: 1.2rem;
   letter-spacing: 1px;
   color: var(--grayishBlue);
@@ -177,5 +171,9 @@ main {
   }
   .bgBottom {
     transform: translate(30%, 65%);
+  }
+
+  .footer{
+    background-color: red;
   }
 } ;
