@@ -37,6 +37,7 @@ main {
   background-color: var(--darkCyan);
   position: relative;
   overflow: hidden;
+  
 }
 
 .wholeCard {
@@ -51,6 +52,7 @@ main {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 4px 4px 40px 1px rgba(0, 0, 0, 0.2);
+  
 }
 
 .cardBG {
@@ -64,6 +66,7 @@ main {
   height: 15rem;
   text-align: center;
   position: relative;
+  
 }
 
 .profileImage {
@@ -92,7 +95,87 @@ main {
 
 .cardLoc{
   margin-top: 1rem;
-  color: var(--grayish-blue);
+  color: var(--grayishBlue);
   font-weight: 400;
   font-size: 1.4rem;
 }
+
+.cardBottom{
+  width: 100%;
+  height: 10rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottomBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomBoxTop{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.bottomBoxDown{
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--grayishBlue);
+}
+
+/*Background*/
+
+.bgTop,
+.bgBottom {
+  width: 50rem;
+  height: 50rem;
+  position: absolute;
+}
+.bgTop {
+  background: url("./images/bg-pattern-top.svg") center / cover no-repeat;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.bgBottom {
+  background: url("./images/bg-pattern-bottom.svg") center / cover no-repeat;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+/*for other screens*/
+
+@media screen and (min-width: 768px) {
+  .bgTop,
+  .bgBottom {
+    width: 100rem;
+    height: 100rem;
+    position: absolute;
+  }
+  .bgTop {
+    transform: translate(-50%, -50%);
+  }
+  .bgBottom {
+    transform: translate(50%, 50%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .bgTop,
+  .bgBottom {
+    width: 110rem;
+    height: 110rem;
+    position: absolute;
+  }
+  .bgTop {
+    transform: translate(-40%, -50%);
+  }
+  .bgBottom {
+    transform: translate(30%, 65%);
+  }
+} ;
