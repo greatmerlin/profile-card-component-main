@@ -10,23 +10,41 @@ body {
   min-height: 100vh;
 }
 
+/*background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+background-image: url("./images/bg-pattern-card.svg");
+*/
+
 .mainWindow {
   display: flex;
   flex-direction: column;
-  background-color: tomato;
-  border-radius: 15px;
+  border-radius: 25px;
   width: 450px;
-  height: 300px;
+  height: 400px;
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
 }
 
 .topDiv {
+    border-radius: 25px;
   order: 0;
   flex-grow: 1;
-
   background-image: url("./images/bg-pattern-card.svg");
+  background-position:top;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
+
+/*
+.leImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chartreuse;
+}
+*/
 
 .bottomDiv {
   order: 1;
@@ -38,14 +56,10 @@ body {
   align-items: center;
   align-content: stretch;
   width: 100%;
+  border-radius: 25px;
 }
 
-.leImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: chartreuse;
-}
+
 
 img {
   border: 1px solid #03bfcb;
@@ -74,4 +88,13 @@ img {
 .bottomDivThree {
   flex-grow: 1;
   text-align: center;
+}
+
+#grey{
+    color: gray;
+    font-style: italic;
+}
+
+#bold{
+    font-weight: bold;
 }
