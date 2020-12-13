@@ -1,100 +1,30 @@
-body {
-  background: url("./images/bg-pattern-top.svg");
-  background-color: rgb(21, 179, 179);
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* whole page "*" */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wholePage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --desaturatedBlue: hsl(229, 23%, 23%);
+  --grayishBlue: hsl(227, 10%, 46%);
+  --darkGray: hsl(0, 0%, 60%);
+
+  --breakMobile: 1280px;
 }
 
-/*background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
-background-image: url("./images/bg-pattern-card.svg");
-*/
+/* html -> body*/
 
-.mainWindow {
-  display: flex;
-  flex-direction: column;
-  border-radius: 25px;
-  width: 450px;
-  height: 400px;
-  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+html,
+body{
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--desaturatedBlue);
+  font-family: "Kumbh Sans", sans-serif;
 }
 
-.topDiv {
-    border-radius: 25px;
-  order: 0;
-  flex-grow: 1;
-  background-image: url("./images/bg-pattern-card.svg");
-  background-position:top;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-/*
-.leImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: chartreuse;
-}
-*/
-
-.bottomDiv {
-  order: 1;
-  flex-grow: 1;
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: stretch;
-  width: 100%;
-  border-radius: 25px;
-}
-
-
-
-img {
-  border: 1px solid #03bfcb;
-  border-radius: 50%;
-  padding: 7px;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-.bottomDivOne {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.bottomDivTwo {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.bottomDivThree {
-  flex-grow: 1;
-  text-align: center;
-}
-
-#grey{
-    color: gray;
-    font-style: italic;
-}
-
-#bold{
-    font-weight: bold;
-}
