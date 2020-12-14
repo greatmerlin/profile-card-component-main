@@ -173,7 +173,10 @@ main {
     transform: translate(30%, 65%);
   }
 
-  .footer{
-    background-color: red;
+  .attribution{
+    text-align: center;
+    padding: 1em;
+    background-color: skyblue;
+    color: white;
   }
 } ;
